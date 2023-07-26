@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src"
+  },
+  "include": ["src", "src/pages/Buyer/SearchResult.js", "src/pages/Sellers/Orders/ReadyOrders.js"]
+}

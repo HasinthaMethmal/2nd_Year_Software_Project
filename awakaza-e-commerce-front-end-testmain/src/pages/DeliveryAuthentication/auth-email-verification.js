@@ -1,0 +1,71 @@
+import React from "react";
+import { Card, CardBody, Col, Container, Row } from "reactstrap";
+
+const EmailVerification = () => {
+
+  document.title = "Email Verification | Awakaza Delivery";
+
+  return (
+    <React.Fragment>
+      <div className="account-pages my-5 pt-sm-5">
+        <Container>
+          <Row>
+            <Col lg={12}>
+              <div className="text-center mb-5 text-muted">
+                <p className="mt-3">Awakaza Delivery</p>
+              </div>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col md={8} lg={6} xl={5}>
+              <Card>
+                <CardBody>
+                  <div className="p-2">
+                    <div className="text-center">
+                      <div className="avatar-md mx-auto">
+                        <div className="avatar-title rounded-circle bg-light">
+                          <i className="bx bxs-envelope h1 mb-0 text-primary"></i>
+                        </div>
+                      </div>
+                      <div className="p-2 mt-4">
+                        <h4>Verify your email</h4>
+                        <p>
+                          We have sent you verification email{" "}
+                          <span className="fw-semibold">
+                            person@gmail.com
+                          </span>
+                          , Please check it
+                        </p>
+                        <div className="mt-4">
+                          <a
+                            href="/"
+                            className="btn btn-success w-md"
+                          >
+                            Verify email
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CardBody>
+              </Card>
+              <div className="mt-5 text-center">
+                <p>
+                  Didn&apos;t receive an email ?{" "}
+                  <a href="#" className="fw-medium text-primary">
+                    {" "}
+                    Resend{" "}
+                  </a>{" "}
+                </p>
+                <p>
+                  © {new Date().getFullYear()}  All Rights Reserved |  Developed by <a href="https://circlebook.site" target="_blank" rel="noopener noreferrer">Circlebook</a>
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </React.Fragment>
+  );
+};
+export default EmailVerification;
